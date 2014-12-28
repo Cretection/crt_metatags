@@ -1,0 +1,5 @@
+crt_metatags {
+	meta {
+		copyright = Copyright &copy; by Cretection Web- &amp; Computertechnik. Alle Rechte vorbehalten.
+	}
+}

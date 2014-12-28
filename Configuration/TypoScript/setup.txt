@@ -71,8 +71,8 @@ plugin.tx_crtmetatags {
 				value = {$plugin.crt_metatags.meta.language.0}
 				wrap = <meta name="DC.Language" scheme="RFC1766" content="|" />
 			}
-			5 = TEXT
-			5 {
+			7 = TEXT
+			7 {
 				value = <link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements">
 			}
 		}

@@ -12,19 +12,19 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Cretection: Metatags',
-	'description' => 'Organisiert die TYPO3 Metatags',
+	'description' => 'Organisiert die TYPO3 Metatags inklusive Dublin Core und bald OpenGraph-Informationen',
 	'category' => 'plugin',
 	'author' => 'Jonathan Starck',
 	'author_email' => 'support@cretection.eu',
-	'state' => 'alpha',
+	'state' => 'beta',
 	'internal' => '',
 	'uploadfolder' => '0',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 1,
-	'version' => '',
+	'version' => '0.0.1',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.2',
+			'typo3' => '6.1.0-6.2.99',
 		),
 		'conflicts' => array(
 		),

@@ -40,7 +40,7 @@ plugin.crt_metatags {
 		# Cononical URL
 		1 = TEXT
 		1 {
-			stdWrap.if.isTrue = {$plugin.crt_metatags.config.canonical}
+			if.isTrue = {$plugin.crt_metatags.config.canonical}
 			wrap = <link rel="canonical" href="|">
 			typolink {
 				returnLast = url
@@ -53,7 +53,7 @@ plugin.crt_metatags {
 		# OpenGraph: URL
 		2 < .1
 		2 {
-			stdWrap.if.isTrue = {$plugin.crt_metatags.config.og-url}
+			if.isTrue = {$plugin.crt_metatags.config.og-url}
 			wrap = <meta property="og:url" content="|">
 		}
 	}

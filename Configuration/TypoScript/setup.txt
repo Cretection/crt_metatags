@@ -90,7 +90,7 @@ plugin.tx_crtmetatags {
 			}
 		}
 		# OpenGraph: URL
-		4 < .2
+		4 < .3
 		4 {
 			if.isTrue = {$plugin.crt_metatags.config.og-url}
 			wrap = <meta property="og:url" content="|">

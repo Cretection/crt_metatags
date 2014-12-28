@@ -29,13 +29,11 @@ plugin.tx_crtmetatags {
 	config-1 {
 		1 = TEXT
 		1 {
-			if.isTrue = {$plugin.crt_metatags.config.noPageTitle}
 			wrap = <title>|</title>
-			10 = TEXT
-			10 {
-				field = title
-				noTrimWrap = {$plugin.crt_metatags.config.pageTitle}
-			}
+			noTrimWrap = {$plugin.crt_metatags.config.pageTitle}
+			field = title
+			if.isTrue = {$plugin.crt_metatags.config.noPageTitle}
+			
 		}
 		# Cononical URL
 		2 = TEXT

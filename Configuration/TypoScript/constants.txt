@@ -2,9 +2,13 @@
 plugin.crt_metatags {
 	#customsubcategory=config=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config
 	config {
-		# cat=crt_metatags/config/1; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.1
+		# cat=crt_metatags/config/1; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.noPageTitle
+		noPageTitle = 1
+		# cat=crt_metatags/config/2; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitleFirst
+		pageTitleFirst = 1
+		# cat=crt_metatags/config/3; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.canonical
 		canonical = 1
-		# cat=crt_metatags/config/2; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.2
+		# cat=crt_metatags/config/4; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.og-url
 		og-url = 1
 	}
 	#customsubcategory=meta=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta

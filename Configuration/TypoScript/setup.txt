@@ -1,21 +1,68 @@
-page.meta >
-page.meta {
-	description {
-		data = page:description
-		ifEmpty.data = levelfield :-1, description, slide
+page {
+	config {
+		noPageTitle = {$plugin.crt_metatags.config.noPageTitle}
+		pageTitleFirst = {$plugin.crt_metatags.config.pageTitleFirst}
 	}
-	keywords {
-		data = page:keywords
-		ifEmpty.data = levelfield :-1, keywords, slide
+	meta >
+	meta {
+		description {
+			data = page:description
+			ifEmpty.data = levelfield :-1, description, slide
+		}
+		keywords {
+			data = page:keywords
+			ifEmpty.data = levelfield :-1, keywords, slide
+		}
+		author {
+			data = page.author
+			ifEmpty.data = levelfield :-1, author, slide
+		}
+		copyright = {$plugin.crt_metatags.meta.copyright}
+		language = {$plugin.crt_metatags.meta.language.0}
+		language {
+			httpEquivalent = 1
+		}
 	}
-	author {
-		data = page.author
-		ifEmpty.data = levelfield :-1, author, slide
-	}
-	copyright = {$plugin.crt_metatags.meta.copyright}
-	language = {$plugin.crt_metatags.meta.language.0}
-	language {
-		httpEquivalent = 1
+}
+plugin.tx_crtmetatags {
+	config-1 = COA
+	config-1 {
+		1 = TEXT
+		1 {
+			if.isTrue = {$plugin.crt_metatags.config.noPageTitle}
+			wrap = <title>|</title>
+			10 = TEXT
+			10 {
+				field = title
+				noTrimWrap = {$plugin.crt_std_func.page.sitetitle}
+			}
+		}
+		2 = TEXT
+		2 {
+			value (
+				
+			) 
+		}
+		# Cononical URL
+		3 = TEXT
+		3 {
+			if.isTrue = {$plugin.crt_metatags.config.canonical}
+			wrap = <link rel="canonical" href="|">
+			typolink {
+				returnLast = url
+				forceAbsoluteUrl = 1
+				parameter {
+					data = TSFE:id
+				}
+			}
+		}
+		4 < .2
+		# OpenGraph: URL
+		5 < .3
+		5 {
+			if.isTrue = {$plugin.crt_metatags.config.og-url}
+			wrap = <meta property="og:url" content="|">
+		}
 	}
 }
 [globalVar = GP:L=1]
@@ -33,28 +80,3 @@ page.meta {
 	language = {$plugin.crt_metatags.meta.language.3}
 }
 [global]
-
-plugin.crt_metatags {
-	config-1 = COA
-	config-1 {
-		# Cononical URL
-		1 = TEXT
-		1 {
-			if.isTrue = {$plugin.crt_metatags.config.canonical}
-			wrap = <link rel="canonical" href="|">
-			typolink {
-				returnLast = url
-				forceAbsoluteUrl = 1
-				parameter {
-					data = TSFE:id
-				}
-			}
-		}
-		# OpenGraph: URL
-		2 < .1
-		2 {
-			if.isTrue = {$plugin.crt_metatags.config.og-url}
-			wrap = <meta property="og:url" content="|">
-		}
-	}
-}

@@ -2,6 +2,7 @@ page {
 	config {
 		noPageTitle = {$plugin.crt_metatags.config.noPageTitle}
 		pageTitleFirst = {$plugin.crt_metatags.config.pageTitleFirst}
+		htmlTag_setParams = {$plugin.crt_metatags.config.htmlTag_setParams}
 	}
 	meta >
 	meta {

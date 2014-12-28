@@ -25,15 +25,14 @@ page {
 	}
 }
 plugin.tx_crtmetatags {
-	config-1 = COA
-	config-1 {
+	tags = COA
+	tags {
 		1 = TEXT
 		1 {
-			wrap = <title>|</title>
-			noTrimWrap = {$plugin.crt_metatags.config.pageTitle}
-			field = title
 			if.isTrue = {$plugin.crt_metatags.config.noPageTitle}
-			
+			field = title
+			noTrimWrap = {$plugin.crt_metatags.config.pageTitle.L0}
+			outerWrap = <title>|</title>
 		}
 		# Cononical URL
 		2 = TEXT
@@ -55,19 +54,81 @@ plugin.tx_crtmetatags {
 			wrap = <meta property="og:url" content="|">
 		}
 	}
+	tt_news = COA {
+		newsTitle = RECORDS
+		newsTitle {
+			source = {GP:tx_ttnews|tt_news}
+			source.insertData = 1
+			tables = tt_news
+			conf.tt_news >
+			conf.tt_news = TEXT
+			conf.tt_news.field = title
+		}
+	}
+	tx_news = COA
+	tx_news {
+		newsTitle = RECORDS
+		newsTitle {
+			source = {GP:tx_news_pi1|news}
+			source.insertData = 1
+			tables = tx_news_domain_model_news
+			conf.tx_news_domain_model_news >
+			conf.tx_news_domain_model_news = TEXT
+			conf.tx_news_domain_model_news.field = title
+		}
+	}
 }
 [globalVar = GP:L=1]
 page.meta {
 	language = {$plugin.crt_metatags.meta.language.1}
+}
+plugin.tx_crtmetatags {
+	tags {
+		1 {
+			noTrimWrap = {$plugin.crt_metatags.config.pageTitle.L1} // {$plugin.crt_metatags.config.pageTitle.L0}
+		}
+	}
 }
 [global]
 [globalVar = GP:L=2]
 page.meta {
 	language = {$plugin.crt_metatags.meta.language.2}
 }
+plugin.tx_crtmetatags {
+	tags {
+		1 {
+			noTrimWrap = {$plugin.crt_metatags.config.pageTitle.L2} // {$plugin.crt_metatags.config.pageTitle.L0}
+		}
+	}
+}
 [global]
 [globalVar = GP:L=3]
 page.meta {
 	language = {$plugin.crt_metatags.meta.language.3}
+}
+plugin.tx_crtmetatags {
+	tags {
+		1 {
+			noTrimWrap = {$plugin.crt_metatags.config.pageTitle.L3} // {$plugin.crt_metatags.config.pageTitle.L0}
+		}
+	}
+}
+[global]
+
+#für tx_news:
+[globalVar = GP:tx_news_pi1|news > 0]
+plugin.tx_crtmetatags {
+	tags {
+		1 < plugin.tx_crtmetatags.tx_news.newsTitle
+	}
+}
+[global]
+
+#für tt_news:
+[globalVar = GP:tx_ttnews|tt_news > 0]
+plugin.tx_crtmetatags {
+	tags {
+		1 < plugin.tx_crtmetatags.tt_news.newsTitle
+	}
 }
 [global]

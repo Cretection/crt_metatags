@@ -15,8 +15,17 @@
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitleFirst">
 				<source>Seiten vor Webseiten-Title: Wenn gesetzt (und wenn der Seitentitel ausgegeben wird), wird der Seitentitel VOR dem Template-Titel ausgegeben (Nur wenn obiges: noPageTitle = 0 ist.)</source>
 			</trans-unit>
-			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitle">
-				<source>Angepasster Title: Mit noTrimWrap angepasster Title</source>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitle.L0">
+				<source>Angepasster Title (L=0 + Fallback): Mit noTrimWrap angepasster Title</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitle.L1">
+				<source>Angepasster Title (L=1): Mit noTrimWrap angepasster Title</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitle.L2">
+				<source>Angepasster Title (L=2): Mit noTrimWrap angepasster Title</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitle.L3">
+				<source>Angepasster Title (L=3): Mit noTrimWrap angepasster Title</source>
 			</trans-unit>
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.canonical">
 				<source>Canonical aktiviert?</source>

@@ -12,45 +12,47 @@ page.meta {
 		data = page.author
 		ifEmpty.data = levelfield :-1, author, slide
 	}
-	copyright = {$crt_metatags.meta.copyright}
-	language = {$crt_metatags.meta.language.0}
+	copyright = {$plugin.crt_metatags.meta.copyright}
+	language = {$plugin.crt_metatags.meta.language.0}
 	language {
 		httpEquivalent = 1
 	}
 }
 [globalVar = GP:L=1]
 page.meta {
-	language = {$crt_metatags.meta.language.1}
+	language = {$plugin.crt_metatags.meta.language.1}
 }
 [global]
 [globalVar = GP:L=2]
 page.meta {
-	language = {$crt_metatags.meta.language.2}
+	language = {$plugin.crt_metatags.meta.language.2}
 }
 [global]
 [globalVar = GP:L=3]
 page.meta {
-	language = {$crt_metatags.meta.language.3}
+	language = {$plugin.crt_metatags.meta.language.3}
 }
 [global]
 
-page.headerData.756 = COA
-page.headerData.756 {
-	# Cononical URL
-	1 = TEXT
-	1 {
-		wrap = <link rel="canonical" href="|">
-		typolink {
-			returnLast = url
-			forceAbsoluteUrl = 1
-			parameter {
-				data = TSFE:id
+plugin.crt_metatags {
+	config-1 = COA
+	config-1 {
+		# Cononical URL
+		1 = TEXT
+		1 {
+			wrap = <link rel="canonical" href="|">
+			typolink {
+				returnLast = url
+				forceAbsoluteUrl = 1
+				parameter {
+					data = TSFE:id
+				}
 			}
 		}
-	}
-	# OpenGraph: URL
-	2 < .1
-	2 {
-		wrap = <meta property="og:url" content="|">
+		# OpenGraph: URL
+		2 < .1
+		2 {
+			wrap = <meta property="og:url" content="|">
+		}
 	}
 }

@@ -1,5 +1,18 @@
-crt_metatags {
+#customcategory=crt_metatags= LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.crt_metatags
+plugin.crt_metatags {
+	#customsubcategory=config= LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config
+	config {
+		
+	}
+	#customsubcategory=meta= LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta
 	meta {
+		# cat=crt_metatags/meta/1; type=string; label= Copyright angaben
 		copyright = Copyright &copy; by Cretection Web- &amp; Computertechnik. Alle Rechte vorbehalten.
+		language {
+			0 = DE
+			1 = 
+			2 =
+			3 =  
+		}
 	}
 }

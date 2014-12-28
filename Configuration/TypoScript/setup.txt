@@ -1,3 +1,4 @@
+page.meta >
 page.meta {
 	description {
 		data = page:description

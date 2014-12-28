@@ -3,6 +3,15 @@
 	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-28T02:12:41Z" product-name="crt_metatags">
 		<header/>
 		<body>
+			<trans-unit id="configuration.typoscript.constants.customcategory.crt_metatags">
+				<source>Metatags</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config">
+				<source>Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta">
+				<source>Metatags anpassen</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

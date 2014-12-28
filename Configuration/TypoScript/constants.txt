@@ -15,11 +15,13 @@ plugin.crt_metatags {
 			L2 = 
 			# cat=crt_metatags/config/6; type=string; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitle.L3
 			L3 = 
-		} 
+		}
 		# cat=crt_metatags/config/7; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.canonical
 		canonical = 1
 		# cat=crt_metatags/config/8; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.og-url
 		og-url = 1
+		# cat=crt_metatags/config/9; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.dublinCore
+		dublinCore = 1
 	}
 	#customsubcategory=meta=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta
 	meta {

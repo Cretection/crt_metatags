@@ -34,9 +34,51 @@ plugin.tx_crtmetatags {
 			noTrimWrap = {$plugin.crt_metatags.config.pageTitle.L0}
 			outerWrap = <title>|</title>
 		}
-		# Cononical URL
-		2 = TEXT
+		#Dublin Core
+		2 = COA
 		2 {
+			if.isTrue = {$plugin.crt_metatags.config.dublinCore}
+			# Dublin Core Title
+			1 < plugin.tx_crtmetatags.tags.1
+			1 {
+				outerWrap = <meta name="DC.Title" content="|">
+			}
+			2 = TEXT
+			2 {
+				ifEmpty.data = levelfield :-1, author, slide
+				data = page.author
+				dataWrap = <meta name="DC.Creator" content="|">
+			}
+			3 = TEXT
+			3 {
+				ifEmpty.data = levelfield :-1, keywords, slide
+				data = page:keywords
+				dataWrap = <meta name="DC.Subject" content="|">
+			}
+			4 = TEXT
+			4 {
+				ifEmpty.data = levelfield :-1, description, slide
+				data = page:description
+				dataWrap = <meta name="DC.Description" content="|">
+			}
+			5 = TEXT
+			5 {
+				value = {$plugin.crt_metatags.meta.copyright}
+				wrap = <meta name="DC.Rights" content="|"> 
+			}
+			6 = TEXT
+			6 {
+				value = {$plugin.crt_metatags.meta.language.0}
+				wrap = <meta name="DC.Language" scheme="RFC1766" content="|" />
+			}
+			5 = TEXT
+			5 {
+				value = <link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements">
+			}
+		}
+		# Cononical URL
+		3 = TEXT
+		3 {
 			if.isTrue = {$plugin.crt_metatags.config.canonical}
 			wrap = <link rel="canonical" href="|">
 			typolink {
@@ -48,8 +90,8 @@ plugin.tx_crtmetatags {
 			}
 		}
 		# OpenGraph: URL
-		3 < .2
-		3 {
+		4 < .2
+		4 {
 			if.isTrue = {$plugin.crt_metatags.config.og-url}
 			wrap = <meta property="og:url" content="|">
 		}
@@ -132,3 +174,5 @@ plugin.tx_crtmetatags {
 	}
 }
 [global]
+
+page.headerData.376 < plugin.tx_crtmetatags.tags

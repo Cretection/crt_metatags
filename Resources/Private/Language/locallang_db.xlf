@@ -9,6 +9,12 @@
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config">
 				<source>Konfiguration</source>
 			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.1">
+				<source>Canonical aktiviert?</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.2">
+				<source>OpenGraph URL aktiviert?</source>
+			</trans-unit>
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta">
 				<source>Metatags anpassen</source>
 			</trans-unit>

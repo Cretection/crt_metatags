@@ -2,7 +2,10 @@
 plugin.crt_metatags {
 	#customsubcategory=config=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config
 	config {
-		
+		# cat=crt_metatags/config/1; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.1
+		canonical = 1
+		# cat=crt_metatags/config/2; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.2
+		og-url = 1
 	}
 	#customsubcategory=meta=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta
 	meta {

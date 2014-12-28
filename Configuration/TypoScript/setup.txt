@@ -34,18 +34,12 @@ plugin.tx_crtmetatags {
 			10 = TEXT
 			10 {
 				field = title
-				noTrimWrap = {$plugin.crt_std_func.page.sitetitle}
+				noTrimWrap = {$plugin.crt_metatags.config.pageTitle}
 			}
 		}
+		# Cononical URL
 		2 = TEXT
 		2 {
-			value (
-				
-			) 
-		}
-		# Cononical URL
-		3 = TEXT
-		3 {
 			if.isTrue = {$plugin.crt_metatags.config.canonical}
 			wrap = <link rel="canonical" href="|">
 			typolink {
@@ -56,10 +50,9 @@ plugin.tx_crtmetatags {
 				}
 			}
 		}
-		4 < .2
 		# OpenGraph: URL
-		5 < .3
-		5 {
+		3 < .2
+		3 {
 			if.isTrue = {$plugin.crt_metatags.config.og-url}
 			wrap = <meta property="og:url" content="|">
 		}

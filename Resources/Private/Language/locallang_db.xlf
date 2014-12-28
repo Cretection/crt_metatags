@@ -10,10 +10,13 @@
 				<source>Konfiguration</source>
 			</trans-unit>
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.noPageTitle">
-				<source>Standard Title wird deaktiviert und die Variante der Extension wird verwendet.</source>
+				<source>Standard Title deaktivieren: Variante der Extension wird verwendet.</source>
 			</trans-unit>
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitleFirst">
-				<source>Wenn gesetzt (und wenn der Seitentitel ausgegeben wird), wird der Seitentitel VOR dem Template-Titel ausgegeben (Nur wenn obiges: noPageTitle = 0 ist.)</source>
+				<source>Seiten vor Webseiten-Title: Wenn gesetzt (und wenn der Seitentitel ausgegeben wird), wird der Seitentitel VOR dem Template-Titel ausgegeben (Nur wenn obiges: noPageTitle = 0 ist.)</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.pageTitle">
+				<source>Angepasster Title: Mit noTrimWrap angepasster Title</source>
 			</trans-unit>
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.canonical">
 				<source>Canonical aktiviert?</source>

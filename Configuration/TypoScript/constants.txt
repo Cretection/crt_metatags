@@ -1,18 +1,22 @@
-#customcategory=crt_metatags= LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.crt_metatags
+#customcategory=crt_metatags=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.crt_metatags
 plugin.crt_metatags {
-	#customsubcategory=config= LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config
+	#customsubcategory=config=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config
 	config {
 		
 	}
-	#customsubcategory=meta= LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta
+	#customsubcategory=meta=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta
 	meta {
-		# cat=crt_metatags/meta/1; type=string; label= Copyright angaben
+		# cat=crt_metatags/meta/1; type=string; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta.1
 		copyright = Copyright &copy; by Cretection Web- &amp; Computertechnik. Alle Rechte vorbehalten.
 		language {
+			# cat=crt_metatags/meta/2; type=string; label= Sprachangabe L=0 (Standard)
 			0 = DE
+			# cat=crt_metatags/meta/3; type=string; label= Sprachangabe L=1
 			1 = 
+			# cat=crt_metatags/meta/4; type=string; label= Sprachangabe L=2
 			2 =
+			# cat=crt_metatags/meta/5; type=string; label= Sprachangabe L=3
 			3 =  
 		}
-	}
+	a
 }

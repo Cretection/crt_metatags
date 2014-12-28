@@ -12,6 +12,9 @@
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta">
 				<source>Metatags anpassen</source>
 			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta.1">
+				<source>Copyright anpassen</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

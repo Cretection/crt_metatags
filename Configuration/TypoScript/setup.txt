@@ -99,10 +99,17 @@ plugin.tx_crtmetatags {
 		5 = COA
 		5 {
 			if.isTrue = {$plugin.crt_metatags.config.openGraph}
-			1 = IMG_RESOURCE
+			1 = COA
 			1 {
-				file = {$plugin.crt_metatags.opengraph.image}
 				stdWrap.wrap = <meta property="og:image" content="|" />
+				1 = TEXT
+				1 {
+					data = TSFE:baseUrl
+				}
+				2 = IMG_RESOURCE 
+				2 {
+					file = {$plugin.crt_metatags.opengraph.image}
+				}
 			}
 		}
 	}

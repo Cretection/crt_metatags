@@ -39,6 +39,9 @@
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.dublinCore">
 				<source>Dublin Core: Aktiviert die zusätzliche Ausgabe des Dublin Cores</source>
 			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.config.openGraph">
+				<source>OpenGraph: Aktiviert die zusätzliche Ausgabe des OpenGraph</source>
+			</trans-unit>
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta">
 				<source>Metatags anpassen</source>
 			</trans-unit>

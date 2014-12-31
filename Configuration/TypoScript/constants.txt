@@ -24,7 +24,7 @@ plugin.crt_metatags {
 		og-url = 1
 		# cat=crt_metatags/config/10; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.dublinCore
 		dublinCore = 1
-		# cat=crt_metatags/config/10; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.dublinCore
+		# cat=crt_metatags/config/11; type=boolean; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.config.openGraph
 		openGraph = 1
 	}
 	#customsubcategory=meta=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.meta
@@ -44,7 +44,7 @@ plugin.crt_metatags {
 	}
 	#customsubcategory=opengraph=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.opengraph
 	opengraph {
-		# cat=crt_metatags/opengraph/1; type=file; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.opengraph.image
+		# cat=crt_metatags/opengraph/1; type=file[jpg,png]; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.opengraph.image
 		image = 
 	}
 }

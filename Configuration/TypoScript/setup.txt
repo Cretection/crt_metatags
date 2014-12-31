@@ -101,7 +101,7 @@ plugin.tx_crtmetatags {
 			if.isTrue = {$plugin.crt_metatags.config.openGraph}
 			1 = IMG_RESOURCE
 			1 {
-				file = {$plugin.crt_metatags.config.openGraph.image}
+				file = {$plugin.crt_metatags.opengraph.image}
 				stdWrap.wrap = <meta property="og:image" content="|" />
 			}
 		}

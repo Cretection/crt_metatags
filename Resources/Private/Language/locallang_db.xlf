@@ -42,8 +42,14 @@
 			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta">
 				<source>Metatags anpassen</source>
 			</trans-unit>
-			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta.1">
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.meta.copyright">
 				<source>Copyright anpassen</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.opengraph">
+				<source>OpenGraph anpassen</source>
+			</trans-unit>
+			<trans-unit id="configuration.typoscript.constants.customcategory.customsubcategory.image">
+				<source>OpenGraph Bild: Bild welches bei Facebook angezeigt wird, wenn diese Webseite geshared wird.</source>
 			</trans-unit>
 		</body>
 	</file>

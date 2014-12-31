@@ -96,6 +96,15 @@ plugin.tx_crtmetatags {
 			if.isTrue = {$plugin.crt_metatags.config.og-url}
 			wrap = <meta property="og:url" content="|">
 		}
+		5 = COA
+		5 {
+			if.isTrue = {$plugin.crt_metatags.config.openGraph}
+			1 = TEXT
+			1 {
+				value = {$plugin.crt_metatags.opengraph.image}
+				wrap = <meta property="og:image" content="|" />
+			}
+		}
 	}
 	tt_news = COA {
 		newsTitle = RECORDS

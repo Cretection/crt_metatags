@@ -44,7 +44,7 @@ plugin.crt_metatags {
 	}
 	#customsubcategory=opengraph=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.opengraph
 	opengraph {
-		# cat=crt_metatags/opengraph/1; type=file[jpg,png]; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.opengraph.image
+		# cat=crt_metatags/opengraph/1; type=string; label=LLL:EXT:crt_metatags/Resources/Private/Language/locallang_db.xml:configuration.typoscript.constants.customcategory.customsubcategory.opengraph.image
 		image = 
 	}
 }
